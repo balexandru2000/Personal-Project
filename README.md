@@ -3,9 +3,8 @@ This repository contains the test cases, bug reports, and related documentation 
 
 Technologies and Tools
 - **Jira:** For test case management and bug tracking.
-- **TestRail:** For creating and executing test cases.
+- **Qase:** For creating and executing test cases.
 - **Trello:** For project management and task tracking.
-- **SQL:** For database validation and data consistency checks.
 
 // Test Cases
 Test cases for the Reports Module are available in the `Test Cases` folder. These cover scenarios such as data accuracy, report generation, and edge cases.
