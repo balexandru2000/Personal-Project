@@ -1,0 +1,958 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Cloners),Inward issue link (Cloners),Inward issue link (Cloners),Inward issue link (Cloners),Outward issue link (Cloners),Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Affected hardware),Custom field (Affected services),Custom field (Approvals),Custom field (Backout plan),Custom field (Behavior ),Custom field (Behavior ),Custom field (Browser),Custom field (Browser),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Device),Custom field (Device),Custom field (Environment ),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Goals),Custom field (Impact),Custom field (Implementation plan),Custom field (Investigation reason),Custom field (Issue color),Custom field (Layer),Custom field (Layer),Custom field (Locked forms),Custom field (Major incident),Custom field (Open forms),Custom field (Pending reason),Custom field (Planned end),Custom field (Planned start),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Request language),Custom field (Request participants),Custom field (Responders),Custom field (Root cause),Satisfaction rating,Custom field (Satisfaction date),Custom field (Sentiment),Custom field (Severity),Custom field (Severity ),Custom field (Source),Sprint,Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Team),Custom field (Test plan),Custom field (Time to close after resolution),Custom field (Time to first response),Custom field (Time to resolution),Custom field (Time to review normal change),Custom field (Total forms),Custom field (Type),Custom field (Type),Custom field (Urgency),Custom field (Vulnerability),Custom field (Work category),Custom field (Workaround),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Status Category,Status Category Changed
+"Funcționalitatea butonului ""Previous"" paginatorului pentru navigarea între luni pe tableta",IT-214,10284,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 7:04 PM,31/Aug/24 7:05 PM,12/Sep/24 11:34 AM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Verificarea functionalitatii sagetii previous a paginatorului pentru a naviga in lunile anterioare din fereastra ""Reports”
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Butonul sub forma de sageata a paginatorului se afla in dreapta sus a corpului paginii in stanga lunii curente a raportului
+
+* *Step 2*
+Action: Click pe sageata paginatorului
+
+
+*Expectes result:*
+
+# Butonul sub forma de sageata sa fie statica
+# Sa functioneze ca navigator catre luniile anterioare
+
+h3. Actual result
+
+Sageata ""Previous"" se deplaseaza la fiecare schimbare de luna pe telefon/tableta
+
+Qase.io defect: [Funcționalitatea butonului &quot;Previous&quot; paginatorului pentru navigarea între luni|https://app.qase.io/defect/GOIT/view/51]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-31,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@269059a0,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zzz,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 7:05 PM
+"Eroare in integrarea butonului ""Forward"" din browser pentru reintoarcere in fila anterioara",IT-213,10283,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Low,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:53 PM,01/Sep/24 9:16 PM,31/Aug/24 7:04 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Utilizarea butonului pentru a te intoarce in fila de rapoarte dupa ce ai fost redirectinat la ""Main Page""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Click pe sageata ""Main Page"" din stanga sus a corpului paginii
+
+* *Step 2*
+Action: Click pe butonul forward situat in stanga sus a browser-ului utilizat
+Expected Result: La click pe butonul ""Forward"" esti redirectionat pe pagina de ""Reports""
+
+h3. Actual result
+
+Pagina nu este configurata sa poti sa te intorci folosing butonul forward integrat in browser
+
+Qase.io defect: [Utilizarea butonului &quot;Forward&quot; integrat in browser pentru reintoarcere in fila anterioara|https://app.qase.io/defect/GOIT/view/24]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-9,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1bec441a,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zzy,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 7:05 PM
+"Eroare in integrarea butonului ""Forward"" din browser pentru reintoarcere in fila anterioara",IT-212,10282,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Low,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:53 PM,01/Sep/24 9:16 PM,31/Aug/24 7:04 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Utilizarea butonului pentru a te intoarce in fila de rapoarte dupa ce ai fost redirectinat la ""Main Page""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Click pe sageata ""Main Page"" din stanga sus a corpului paginii
+
+* *Step 2*
+Action: Click pe butonul forward situat in stanga sus a browser-ului utilizat
+Expected Result: La click pe butonul ""Forward"" esti redirectionat pe pagina de ""Reports""
+
+h3. Actual result
+
+Pagina nu este configurata sa poti sa te intorci folosing butonul forward integrat in browser
+
+Qase.io defect: [Utilizarea butonului &quot;Forward&quot; integrat in browser pentru reintoarcere in fila anterioara|https://app.qase.io/defect/GOIT/view/24]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-9,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@60f318b9,,,Positive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zzx,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 7:05 PM
+"Eroare in funcționalitatea pop-ul-ului ""sesiune expirată""",IT-210,10280,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:48 PM,01/Sep/24 9:19 PM,31/Aug/24 6:49 PM,,,0,"h3. Preconditions
+
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. să fii autentificat în aplicație
+
+h3. Description
+
+* Verifică faptul că aplicația deconectează utilizatorul după o perioadă de inactivitate. Utilizatorii nu pot accesa date la care nu au autorizație.
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Lasă sesiunea inactivă pentru o perioadă prestabilită
+Expected Result: Nu ai acces la nici o activitate de administrator
+
+* *Step 2*
+Action: Încearcă să efectuezi o acțiune în aplicație după perioada de inactivitate
+Expected Result: Actiunuea nu va fi posibila
+
+* *Step 3*
+Action: Verifică dacă aplicația solicită reautentificarea
+Expected Result: Esti deconectat automat și trebuie să se autentifice din nou.
+
+h3. Actual result
+
+La o perioada mai luna ge inactivitate pagina da crash si ofera eroare ""404 Not Found""
+
+Qase.io defect: [Verificarea funcționalității de &quot;sesiune expirată&quot;|https://app.qase.io/defect/GOIT/view/96]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-75,31/Aug/24 6:48 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_MCQTgAkHea.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10035,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@783ce2b1,,,Destructive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zzv,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 6:49 PM
+"Eroare in funcționalitatea pop-ul-ului ""sesiune expirată""",IT-209,10279,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:48 PM,01/Sep/24 9:19 PM,31/Aug/24 6:50 PM,,,0,"h3. Preconditions
+
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. să fii autentificat în aplicație
+
+h3. Description
+
+* Verifică faptul că aplicația deconectează utilizatorul după o perioadă de inactivitate. Utilizatorii nu pot accesa date la care nu au autorizație.
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Lasă sesiunea inactivă pentru o perioadă prestabilită
+Expected Result: Nu ai acces la nici o activitate de administrator
+
+* *Step 2*
+Action: Încearcă să efectuezi o acțiune în aplicație după perioada de inactivitate
+Expected Result: Actiunuea nu va fi posibila
+
+* *Step 3*
+Action: Verifică dacă aplicația solicită reautentificarea
+Expected Result: Esti deconectat automat și trebuie să se autentifice din nou.
+
+h3. Actual result
+
+La o perioada mai luna ge inactivitate pagina da crash si ofera eroare ""404 Not Found""
+
+Qase.io defect: [Verificarea funcționalității de &quot;sesiune expirată&quot;|https://app.qase.io/defect/GOIT/view/96]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-75,31/Aug/24 6:48 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_MCQTgAkHea.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10034,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@745c2626,,,Destructive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zzr,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 6:48 PM
+Eroare in permisiunea capturilor de ecran cu date confidentiale,IT-208,10278,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:47 PM,01/Sep/24 9:20 PM,31/Aug/24 6:49 PM,,,0,"h3. Preconditions
+
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. cont de utilizator valid în aplicație
+
+h3. Description
+
+Acest test verifică dacă aplicația permite sau împiedică realizarea capturilor de ecran atunci când sunt afișate date confidențiale sau sensibile. Testul se asigură că datele sensibile sunt protejate împotriva capturării neautorizate.
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Logeaza te in aplicatie cu contul creat
+
+* *Step 2*
+Action: Fa o captura de ecarn
+Expected Result: Pe ecran apare un mesaj de eroare, aplicația nu răspunde pozitiv la acțiunea utilizatorului.
+
+h3. Actual result
+
+In aplicatia web se pot face screenshot-uri cu datele confidentiale
+
+Qase.io defect: [Verificarea posibilității de efectuare a capturilor de ecran pentru date confidențiale|https://app.qase.io/defect/GOIT/view/110]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-88,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5d6bb8f1,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zzi,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 6:48 PM
+Eroare in permisiunea capturilor de ecran cu date confidentiale,IT-207,10277,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:47 PM,01/Sep/24 9:20 PM,31/Aug/24 6:49 PM,,,0,"h3. Preconditions
+
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. cont de utilizator valid în aplicație
+
+h3. Description
+
+Acest test verifică dacă aplicația permite sau împiedică realizarea capturilor de ecran atunci când sunt afișate date confidențiale sau sensibile. Testul se asigură că datele sensibile sunt protejate împotriva capturării neautorizate.
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Logeaza te in aplicatie cu contul creat
+
+* *Step 2*
+Action: Fa o captura de ecarn
+Expected Result: Pe ecran apare un mesaj de eroare, aplicația nu răspunde pozitiv la acțiunea utilizatorului.
+
+h3. Actual result
+
+In aplicatia web se pot face screenshot-uri cu datele confidentiale
+
+Qase.io defect: [Verificarea posibilității de efectuare a capturilor de ecran pentru date confidențiale|https://app.qase.io/defect/GOIT/view/110]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-88,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@40d2e229,,,Positive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zz,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 6:48 PM
+Eroare in recuperarea/resetarea parolei,IT-205,10275,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:44 PM,01/Sep/24 9:21 PM,31/Aug/24 6:49 PM,,,0,"h3. Preconditions
+
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. cont de utilizator valid în aplicație
+
+h3. Description
+
+Acest test verifică funcționalitatea de recuperare a parolei sau resetare a parolei în aplicație. Testul se asigură că utilizatorii care au uitat parola pot iniția procesul de resetare, primesc instrucțiuni prin e-mail și pot seta o nouă parolă în mod securizat.
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Localizează și dă clic pe link-ul ""Am uitat parola"" sau ""Recuperare parolă"" de pe pagina de autentificare.
+Expected Result: Prezenta butonului Am uitat parola"" sau ""Recuperare parolă""
+
+h3. Actual result
+
+Nu exista optiunea/butonul de ""Recuperare parola""
+
+Qase.io defect: [Verificarea posibilității de recuperare sau resetare a parolei|https://app.qase.io/defect/GOIT/view/108]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-86,31/Aug/24 6:44 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_YIo0lAHCHo.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10033,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2f1af43b,,,Negative,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zy,,,,,,,,,,⛔ Blocker,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 6:48 PM
+Eroare in recuperarea/resetarea parolei,IT-204,10274,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:44 PM,01/Sep/24 9:21 PM,31/Aug/24 7:04 PM,,,0,"h3. Preconditions
+
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. cont de utilizator valid în aplicație
+
+h3. Description
+
+Acest test verifică funcționalitatea de recuperare a parolei sau resetare a parolei în aplicație. Testul se asigură că utilizatorii care au uitat parola pot iniția procesul de resetare, primesc instrucțiuni prin e-mail și pot seta o nouă parolă în mod securizat.
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Localizează și dă clic pe link-ul ""Am uitat parola"" sau ""Recuperare parolă"" de pe pagina de autentificare.
+Expected Result: Prezenta butonului Am uitat parola"" sau ""Recuperare parolă""
+
+h3. Actual result
+
+Nu exista optiunea/butonul de ""Recuperare parola""
+
+Qase.io defect: [Verificarea posibilității de recuperare sau resetare a parolei|https://app.qase.io/defect/GOIT/view/108]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-86,31/Aug/24 6:44 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_YIo0lAHCHo.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10032,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@16897291,,,Negative,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zx,,,,,,,,,,⛔ Blocker,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 6:48 PM
+Eroare in indentarea veniturilor corect in pagina,IT-202,10272,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:35 PM,01/Sep/24 9:16 PM,31/Aug/24 6:48 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul trebuie sa aiba suma de 7 numere
+
+h3. Description
+
+Utilizatorul poate vedea suma totala a veniturilor scris sub denumirea de ""Income"" indentata corect si intr-un stil ce respecta normele estetice in pagina
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Verifica indentarea sumei din sectiunia ""Income"" din partea de sus a corpului paginii
+Expected Result: Suma de bani din sectiunea ""Income"" este afisata corect si indentata corespunzator
+
+h3. Actual result
+
+Suma veniturilor este indentata necorespuzator si nu respecta normele unui design modern pentru o pagina web pe desktop/telefon/tableta
+
+Qase.io defect: [Utilizatorul poate observa suma veniturilor indentata corect in pagina|https://app.qase.io/defect/GOIT/view/75]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-53,31/Aug/24 6:35 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_RCwnxbRWBa.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10031,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7215f420,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zv,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:36 PM
+Eroare in indentarea veniturilor corect in pagina,IT-201,10271,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:34 PM,01/Sep/24 9:16 PM,31/Aug/24 6:35 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul trebuie sa aiba suma de 7 numere
+
+h3. Description
+
+Utilizatorul poate vedea suma totala a veniturilor scris sub denumirea de ""Income"" indentata corect si intr-un stil ce respecta normele estetice in pagina
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Verifica indentarea sumei din sectiunia ""Income"" din partea de sus a corpului paginii
+Expected Result: Suma de bani din sectiunea ""Income"" este afisata corect si indentata corespunzator
+
+h3. Actual result
+
+Suma veniturilor este indentata necorespuzator si nu respecta normele unui design modern pentru o pagina web pe desktop/telefon/tableta
+
+Qase.io defect: [Utilizatorul poate observa suma veniturilor indentata corect in pagina|https://app.qase.io/defect/GOIT/view/75]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-53,31/Aug/24 6:34 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_RCwnxbRWBa.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10030,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2f825,,,Positive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zr,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:36 PM
+Eroare in indentarea cheltuielilor corect in pagina,IT-200,10270,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:34 PM,01/Sep/24 9:16 PM,31/Aug/24 6:35 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul trebuie sa aiba suma de 7 numere
+
+h3. Description
+
+Utilizatorul poate vedea suma totala a veniturilor scris sub denumirea de ""Expenses"" indentata corect si intr-un stil ce respecta normele estetice in pagina
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Verifica indentarea sumei din sectiunia ""Expenses"" din partea de sus a corpului paginii
+Expected Result: Suma de bani din sectiunea ""Expenses"" este afisata corect si indentata corespunzator
+
+h3. Actual result
+
+Suma de bani nu este indentata corect in pagina avand un stil inestetic si nerespectand normele unei pagini moderne pe desktop/telefon/tableta
+
+Qase.io defect: [Utilizatorul poate observa suma cheltuielilor indentata corect in pagina|https://app.qase.io/defect/GOIT/view/72]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-51,31/Aug/24 6:34 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_RCwnxbRWBa.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10029,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7841703a,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:zi,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:36 PM
+Eroare in indentarea cheltuielilor corect in pagina,IT-199,10269,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:34 PM,01/Sep/24 9:15 PM,31/Aug/24 6:35 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul trebuie sa aiba suma de 7 numere
+
+h3. Description
+
+Utilizatorul poate vedea suma totala a veniturilor scris sub denumirea de ""Expenses"" indentata corect si intr-un stil ce respecta normele estetice in pagina
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Verifica indentarea sumei din sectiunia ""Expenses"" din partea de sus a corpului paginii
+Expected Result: Suma de bani din sectiunea ""Expenses"" este afisata corect si indentata corespunzator
+
+h3. Actual result
+
+Suma de bani nu este indentata corect in pagina avand un stil inestetic si nerespectand normele unei pagini moderne pe desktop/telefon/tableta
+
+Qase.io defect: [Utilizatorul poate observa suma cheltuielilor indentata corect in pagina|https://app.qase.io/defect/GOIT/view/72]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-51,31/Aug/24 6:34 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_RCwnxbRWBa.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10028,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@32142caa,,,Positive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:z,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:36 PM
+"Eroare in utiliarea butonului ""Reload"" incorporat in browser",IT-198,10268,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:32 PM,01/Sep/24 9:15 PM,31/Aug/24 6:35 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul sa aiba deschis in browser linkul de doua ori:
+1. Pe pagina ""Reports"" (sub denumirea de ""A"")
+2. Pe pagina ""Main Page"" (sub denumirea de ""B"")
+
+h3. Description
+
+Utilizarea butonului ""Reload"" actualizeaza rapoartele in cazul incare se folosesc doua dispozitive simultan pe acelasi cont
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Apasa pe butonul ""Reload"" integrat in browser
+Expected Result: 1. Pagina se reincarca
+2. Suma de bani este actualizata in sectiunea de ""Income""
+
+h3. Actual result
+
+In momentul in care se da refresh la pagina, pagina da crash si apare eroarea 404
+
+Qase.io defect: [Utiliarea butonului &quot;Reload&quot; incorporat in browser|https://app.qase.io/defect/GOIT/view/66]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-45,31/Aug/24 6:32 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_kmCGNRFZjD.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10027,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@10bb4b2f,,,Negative,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:y,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Performance,,,,,,,In Progress,31/Aug/24 6:36 PM
+"Eroare in utiliarea butonului ""Reload"" incorporat in browser",IT-196,10266,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:32 PM,01/Sep/24 9:15 PM,31/Aug/24 6:35 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul sa aiba deschis in browser linkul de doua ori:
+1. Pe pagina ""Reports"" (sub denumirea de ""A"")
+2. Pe pagina ""Main Page"" (sub denumirea de ""B"")
+
+h3. Description
+
+Utilizarea butonului ""Reload"" actualizeaza rapoartele in cazul incare se folosesc doua dispozitive simultan pe acelasi cont
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Apasa pe butonul ""Reload"" integrat in browser
+Expected Result: 1. Pagina se reincarca
+2. Suma de bani este actualizata in sectiunea de ""Income""
+
+h3. Actual result
+
+In momentul in care se da refresh la pagina, pagina da crash si apare eroarea 404
+
+Qase.io defect: [Utiliarea butonului &quot;Reload&quot; incorporat in browser|https://app.qase.io/defect/GOIT/view/66]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-45,31/Aug/24 6:32 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_kmCGNRFZjD.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10026,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7bc53e76,,,Negative,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:x,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Performance,,,,,,,In Progress,31/Aug/24 6:36 PM
+"Eroare in integrarea butonului ""Forward"" din browser pentru reintoarcere in fila anterioara",IT-194,10264,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Low,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:25 PM,01/Sep/24 9:14 PM,31/Aug/24 6:28 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Utilizarea butonului pentru a te intoarce in fila de rapoarte dupa ce ai fost redirectinat la ""Main Page""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Click pe sageata ""Main Page"" din stanga sus a corpului paginii
+
+* *Step 2*
+Action: Click pe butonul forward situat in stanga sus a browser-ului utilizat
+Expected Result: La click pe butonul ""Forward"" esti redirectionat pe pagina de ""Reports""
+
+h3. Actual result
+
+Pagina nu este configurata sa poti sa te intorci folosing butonul forward integrat in browser
+
+Qase.io defect: [Utilizarea butonului &quot;Forward&quot; integrat in browser pentru reintoarcere in fila anterioara|https://app.qase.io/defect/GOIT/view/24]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-9,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4930807d,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:v,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:29 PM
+"Eroare in integrarea butonului ""Forward"" din browser pentru reintoarcere in fila anterioara",IT-193,10263,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Low,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:25 PM,01/Sep/24 9:14 PM,31/Aug/24 6:28 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Utilizarea butonului pentru a te intoarce in fila de rapoarte dupa ce ai fost redirectinat la ""Main Page""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Click pe sageata ""Main Page"" din stanga sus a corpului paginii
+
+* *Step 2*
+Action: Click pe butonul forward situat in stanga sus a browser-ului utilizat
+Expected Result: La click pe butonul ""Forward"" esti redirectionat pe pagina de ""Reports""
+
+h3. Actual result
+
+Pagina nu este configurata sa poti sa te intorci folosing butonul forward integrat in browser
+
+Qase.io defect: [Utilizarea butonului &quot;Forward&quot; integrat in browser pentru reintoarcere in fila anterioara|https://app.qase.io/defect/GOIT/view/24]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-9,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4f88d983,,,Positive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:r,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:29 PM
+"Eroare in limitarea superioara a paginatorului din fereastra ""Reports"" ",IT-192,10262,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:24 PM,01/Sep/24 9:13 PM,31/Aug/24 6:28 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. Data trebuie modificata in computer cu o luna in viitor
+
+h3. Description
+
+Acest test arata ca nu poti naviga spre o luna viitoate in pagina ""Reports""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Modifica data computerului cu o luna in viitor
+* *Step 2*
+Action: Acceseaza pagina Cashify in browser
+* *Step 3*
+Action: Click pe butonul ""Reports""
+* *Step 4*
+Action: Verifica data din paginator
+
+*Expected result:*
+
+Paginatorul trebuie să afișeze luna curentă reală, bazată pe timpul real, nu pe data manipulată în sistem
+
+h3. Actual result
+
+La schimbarea lunii din calculator aplicatia web afiseaza luna dispozitivului nu cea reala pe pc/tableta/telefon
+
+Qase.io defect: [Limitarea superioara a paginatorului din fereastra &quot;Reports&quot; daca data computerului este schimbata cu o luna in viitor|https://app.qase.io/defect/GOIT/view/61]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-40,31/Aug/24 6:24 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_30N2SulTpG.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10025,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@75391f18,,,Negative,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:i,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:28 PM
+"Eroare in limitarea superioara a paginatorului din fereastra ""Reports"" ",IT-190,10260,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,31/Aug/24 6:24 PM,01/Sep/24 9:13 PM,31/Aug/24 6:27 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. Data trebuie modificata in computer cu o luna in viitor
+
+h3. Description
+
+Acest test arata ca nu poti naviga spre o luna viitoate in pagina ""Reports""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Modifica data computerului cu o luna in viitor
+* *Step 2*
+Action: Acceseaza pagina Cashify in browser
+* *Step 3*
+Action: Click pe butonul ""Reports""
+* *Step 4*
+Action: Verifica data din paginator
+
+*Expected result:*
+
+Paginatorul trebuie să afișeze luna curentă reală, bazată pe timpul real, nu pe data manipulată în sistem
+
+h3. Actual result
+
+La schimbarea lunii din calculator aplicatia web afiseaza luna dispozitivului nu cea reala pe pc/tableta/telefon
+
+Qase.io defect: [Limitarea superioara a paginatorului din fereastra &quot;Reports&quot; daca data computerului este schimbata cu o luna in viitor|https://app.qase.io/defect/GOIT/view/61]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,,,,,,,,,,,,,IT-40,31/Aug/24 6:24 PM;ug:3e28626a-fcda-43e3-ad16-30200c109146;opera_30N2SulTpG.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10023,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@76f5837,,,Negative,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wu:,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 6:28 PM
+Eroare in permisiunea capturilor de ecran cu date confidentiale,IT-88,10146,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:48 PM,01/Sep/24 9:21 PM,31/Aug/24 6:47 PM,,,0,"h3. Preconditions
+
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. cont de utilizator valid în aplicație
+
+h3. Description
+
+Acest test verifică dacă aplicația permite sau împiedică realizarea capturilor de ecran atunci când sunt afișate date confidențiale sau sensibile. Testul se asigură că datele sensibile sunt protejate împotriva capturării neautorizate.
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Logeaza te in aplicatie cu contul creat
+
+* *Step 2*
+Action: Fa o captura de ecarn
+Expected Result: Pe ecran apare un mesaj de eroare, aplicația nu răspunde pozitiv la acțiunea utilizatorului.
+
+h3. Actual result
+
+In aplicatia web se pot face screenshot-uri cu datele confidentiale
+
+Qase.io defect: [Verificarea posibilității de efectuare a capturilor de ecran pentru date confidențiale|https://app.qase.io/defect/GOIT/view/110]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-207,IT-208,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1e5f48d3,,,Positive ,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wm:r,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 11:46 AM
+Eroare in recuperarea/resetarea parolei,IT-86,10144,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:47 PM,01/Sep/24 9:21 PM,01/Sep/24 9:18 PM,,,0,"h3. Preconditions
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/](https://kapusta-qa-ro.p.goit.global/)
+2. cont de utilizator valid în aplicație
+
+h3. Description
+Acest test verifică funcționalitatea de recuperare a parolei sau resetare a parolei în aplicație. Testul se asigură că utilizatorii care au uitat parola pot iniția procesul de resetare, primesc instrucțiuni prin e-mail și pot seta o nouă parolă în mod securizat.
+
+h3. Steps to reproduce
+* *Step 1*
+Action: Localizează și dă clic pe link-ul ""Am uitat parola"" sau ""Recuperare parolă"" de pe pagina de autentificare.
+Expected Result: Prezenta butonului Am uitat parola"" sau ""Recuperare parolă""
+
+
+h3. Actual result
+Nu exista optiunea/butonul de ""Recuperare parola""
+
+
+
+Qase.io defect: [Verificarea posibilității de recuperare sau resetare a parolei|https://app.qase.io/defect/GOIT/view/108]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-204,IT-205,,,,30/Aug/24 10:47 PM;5f4592bc42959b0039c99bb4;opera_YIo0lAHCHo.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10018,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5d9c96c5,,,Negative,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000wm:,,,,,,,,,,⛔ Blocker,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 11:46 AM
+Blocker - Verificarea protecției împotriva SQL Injection,IT-80,10138,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:42 PM,01/Sep/24 9:18 PM,31/Aug/24 6:42 PM,,,0,"h3. Preconditions
+1.Esti pe site-ul https://kapusta-qa-ro.p.goit.global/ la pagina de autentificare 
+2.Ai permisiunea de a efectua teste de securitate pe site-ul respectiv.
+
+h3. Description
+Verifică faptul că aplicația este protejată împotriva atacurilor de tip SQL Injection.
+
+h3. Steps to reproduce
+* *Step 1*
+Action: 1.În câmpul pentru numele de utilizator, introdu următorul payload SQL Injection,iar in câmpul pentru parolă, introdu orice valoare (ex: test).
+Expected Result: Sistemul ar trebui să respingă payload-ul SQL Injection .
+
+* *Step 2*
+Action: 2.Apasă butonul **Login** pentru a trimite formularul.
+Expected Result: Formularul ar trebui să fie procesat fără a permite accesul neautorizat, și utilizatorul ar trebui să rămână pe pagina de autentificare sau să primească un mesaj de eroare generalizat care nu dezvăluie informații despre baza de date.
+
+* *Step 3*
+Action: 3.Observa răspunsului Aplicației:
+Expected Result: Nu ar trebui să se permită autentificarea cu payload-uri malițioase si nu ar trebui să fie vizibile mesaje de eroare detaliate care dezvăluie informații interne despre interogările SQL sau structura bazei de date.
+
+
+h3. Actual result
+Nu s-a oferit permisiunea pentru a se face testele de securitate prin SQL Injection
+
+
+
+Qase.io defect: [Verificarea protecției împotriva SQL Injection|https://app.qase.io/defect/GOIT/view/101]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2f69b67,,,Destructive ,,,,,,,,,,,,,,,,,,,,📡API,,,,,,,,,0|i000wf:,,,,,,,,,,⛔ Blocker,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 11:45 AM
+Blocker - Verificarea accesului neautorizat la date,IT-78,10136,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:41 PM,01/Sep/24 9:18 PM,31/Aug/24 6:42 PM,,,0,"h3. Preconditions
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/](https://kapusta-qa-ro.p.goit.global/)
+2. cont de utilizator valid în aplicație
+
+h3. Description
+Verifică faptul că utilizatorii nu pot accesa date la care nu au autorizație.
+
+h3. Steps to reproduce
+* *Step 1*
+Action: Încearcă să accesezi o pagină sau o funcționalitate rezervată administratorilor.
+Expected Result: Nu ai acces la nici o activitate de administrator
+
+
+h3. Actual result
+Nu se pot accesa functionalitatile rezervate administratorilor
+
+
+
+Qase.io defect: [Verificarea accesului neautorizat la date|https://app.qase.io/defect/GOIT/view/99]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1097d5f9,,,Negative,,,,,,,,,,,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000vz:,,,,,,,,,,⛔ Blocker,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 11:45 AM
+"Eroare in funcționalitatea pop-ul-ului ""sesiune expirată""",IT-75,10133,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:38 PM,01/Sep/24 9:19 PM,31/Aug/24 6:48 PM,,,0,"h3. Preconditions
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/](https://kapusta-qa-ro.p.goit.global/)
+2. să fii autentificat în aplicație
+
+h3. Description
+* Verifică faptul că aplicația deconectează utilizatorul după o perioadă de inactivitate. Utilizatorii nu pot accesa date la care nu au autorizație.
+
+h3. Steps to reproduce
+* *Step 1*
+Action: Lasă sesiunea inactivă pentru o perioadă prestabilită
+Expected Result: Nu ai acces la nici o activitate de administrator
+
+* *Step 2*
+Action: Încearcă să efectuezi o acțiune în aplicație după perioada de inactivitate
+Expected Result: Actiunuea nu va fi posibila
+
+* *Step 3*
+Action: Verifică dacă aplicația solicită reautentificarea
+Expected Result: Esti deconectat automat și trebuie să se autentifice din nou.
+
+
+h3. Actual result
+La o perioada mai luna ge inactivitate pagina da crash si ofera eroare ""404 Not Found""
+
+
+
+Qase.io defect: [Verificarea funcționalității de &quot;sesiune expirată&quot;|https://app.qase.io/defect/GOIT/view/96]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-209,IT-210,,,,30/Aug/24 10:38 PM;5f4592bc42959b0039c99bb4;opera_MCQTgAkHea.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10016,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@68272cd8,,,Destructive ,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000vb:,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 11:44 AM
+Blocker - Verificarea criptării parolei,IT-69,10127,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:36 PM,01/Sep/24 9:17 PM,31/Aug/24 6:40 PM,,,0,"h3. Preconditions
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/](https://kapusta-qa-ro.p.goit.global/)
+2. Acces la baza de date unde sunt stocate parolele utilizatorilor.
+3. O unealtă pentru a verifica criptarea parolei
+
+h3. Description
+Verifică faptul că parolele utilizatorului sunt criptate corespunzător înainte de a fi stocate în baza de date.
+
+h3. Steps to reproduce
+* *Step 1*
+Action: Înregistrează un nou cont în aplicație, specificând o parolă.
+Expected Result: Cont nou inregistrat
+
+* *Step 2*
+Action: Accesează baza de date și localizează înregistrarea parolei.
+Expected Result: Parola inregistrata localizata
+
+* *Step 3*
+Action: Verifică dacă parola este criptată
+Expected Result: Parola este stocată și nu este vizibilă în text simplu.
+
+
+h3. Actual result
+Nu exista acces la baza de date pentru a putea testa criptarea acestora
+
+
+
+Qase.io defect: [Verificarea criptării parolei|https://app.qase.io/defect/GOIT/view/90]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@242f2faf,,,Destructive ,,,,,,,,,,,,,,,,,,,,📡API,,,,,,,,,0|i000tz:,,,,,,,,,,⛔ Blocker,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 11:43 AM
+Blocker - Verificarea criptării datelor personale,IT-65,10123,Bug,Security,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:32 PM,01/Sep/24 9:17 PM,31/Aug/24 6:39 PM,,,0,"h3. Preconditions
+1. Acceseaza acest link : [https://kapusta-qa-ro.p.goit.global/](https://kapusta-qa-ro.p.goit.global/)
+2. Execută acțiunile specifice care poate intercepta și vizualiza traficul de rețea
+
+h3. Description
+Verifică faptul că toate acțiunile utilizatorului se finalizează în maxim 2 secunde.
+
+h3. Steps to reproduce
+* *Step 1*
+Action: Completează și trimite un formular care conține date personale
+Expected Result: Formularul este completat cu date personale
+
+* *Step 2*
+Action: Interceptează traficul dintre client și server folosind o unealtă de analiză a rețelei.
+Expected Result: Conexiunea este interceptata in software si se incepe analiza
+
+* *Step 3*
+Action: Verifică dacă datele personale sunt criptate în tranzit
+Expected Result: Datele se afla sub forma de JSON si pot sa fie citite doar cu ajutorul unui Key
+
+* *Step 4*
+Action: Dacă ai acces la baza de date, verifică dacă datele personale sunt stocate criptat.
+Expected Result: Datele personale sunt criptate atât în tranzit, cât și la stocare.
+
+
+h3. Actual result
+Nu exista acces la baza de date
+
+
+
+Qase.io defect: [Verificarea criptării datelor personale|https://app.qase.io/defect/GOIT/view/86]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@73e4bd27,,,Destructive ,,,,,,,,,,,,,,,,,,,,📡API,,,,,,,,,0|i000t3:,,,,,,,,,,⛔ Blocker,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Security,,,,,,,In Progress,31/Aug/24 11:42 AM
+Eroare in indentarea veniturilor corect in pagina,IT-53,10111,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:17 PM,01/Sep/24 9:12 PM,31/Aug/24 6:34 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul trebuie sa aiba suma de 7 numere
+
+h3. Description
+
+Utilizatorul poate vedea suma totala a veniturilor scris sub denumirea de ""Income"" indentata corect si intr-un stil ce respecta normele estetice in pagina
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Verifica indentarea sumei din sectiunia ""Income"" din partea de sus a corpului paginii
+Expected Result: Suma de bani din sectiunea ""Income"" este afisata corect si indentata corespunzator
+
+h3. Actual result
+
+Suma veniturilor este indentata necorespuzator si nu respecta normele unui design modern pentru o pagina web pe desktop/telefon/tableta
+
+Qase.io defect: [Utilizatorul poate observa suma veniturilor indentata corect in pagina|https://app.qase.io/defect/GOIT/view/75]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-201,IT-202,,,,30/Aug/24 10:17 PM;5f4592bc42959b0039c99bb4;opera_RCwnxbRWBa.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10015,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@645134bf,,,Positive ,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000qf:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:40 AM
+Eroare in indentarea cheltuielilor corect in pagina,IT-51,10109,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:15 PM,01/Sep/24 9:12 PM,31/Aug/24 6:33 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul trebuie sa aiba suma de 7 numere
+
+h3. Description
+
+Utilizatorul poate vedea suma totala a veniturilor scris sub denumirea de ""Expenses"" indentata corect si intr-un stil ce respecta normele estetice in pagina
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Verifica indentarea sumei din sectiunia ""Expenses"" din partea de sus a corpului paginii
+Expected Result: Suma de bani din sectiunea ""Expenses"" este afisata corect si indentata corespunzator
+
+h3. Actual result
+
+Suma de bani nu este indentata corect in pagina avand un stil inestetic si nerespectand normele unei pagini moderne pe desktop/telefon/tableta
+
+Qase.io defect: [Utilizatorul poate observa suma cheltuielilor indentata corect in pagina|https://app.qase.io/defect/GOIT/view/72]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-199,IT-200,,,,30/Aug/24 10:15 PM;5f4592bc42959b0039c99bb4;opera_RCwnxbRWBa.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10014,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@258193e1,,,Positive ,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000pz:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:40 AM
+"Eroare in utiliarea butonului ""Reload"" incorporat in browser",IT-45,10103,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 10:09 PM,01/Sep/24 9:11 PM,01/Sep/24 9:11 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+5. User-ul sa aiba deschis in browser linkul de doua ori:
+1. Pe pagina ""Reports"" (sub denumirea de ""A"")
+2. Pe pagina ""Main Page"" (sub denumirea de ""B"")
+
+h3. Description
+
+Utilizarea butonului ""Reload"" actualizeaza rapoartele in cazul incare se folosesc doua dispozitive simultan pe acelasi cont
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Apasa pe butonul ""Reload"" integrat in browser
+Expected Result: 1. Pagina se reincarca
+2. Suma de bani este actualizata in sectiunea de ""Income""
+
+h3. Actual result
+
+In momentul in care se da refresh la pagina, pagina da crash si apare eroarea 404
+
+Qase.io defect: [Utiliarea butonului &quot;Reload&quot; incorporat in browser|https://app.qase.io/defect/GOIT/view/66]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-196,IT-198,,,,30/Aug/24 10:09 PM;5f4592bc42959b0039c99bb4;opera_kmCGNRFZjD.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10013,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@24f70a1,,,Negative,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000pq:,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Performance,,,,,,,In Progress,31/Aug/24 11:38 AM
+"Eroare in limitarea superioara a paginatorului din fereastra ""Reports"" ",IT-40,10098,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Highest,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 9:56 PM,01/Sep/24 9:11 PM,01/Sep/24 9:10 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/])
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. Data trebuie modificata in computer cu o luna in viitor
+
+h3. Description
+
+Acest test arata ca nu poti naviga spre o luna viitoate in pagina ""Reports"" daca data computerului este schimbata cu o luna in viitor
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Modifica data computerului cu o luna in viitor
+* *Step 2*
+Action: Acceseaza pagina Cashify in browser
+* *Step 3*
+Action: Click pe butonul ""Reports""
+* *Step 4*
+Action: Verifica data din paginator
+
+*Expected result:*
+
+Paginatorul trebuie să afișeze luna curentă reală, bazată pe timpul real, nu pe data manipulată în sistem
+
+h3. Actual result
+
+La schimbarea lunii din calculator aplicatia web afiseaza luna dispozitivului nu cea reala pe pc/tableta/telefon
+
+Qase.io defect: [Limitarea superioara a paginatorului din fereastra &quot;Reports&quot; daca data computerului este schimbata cu o luna in viitor|https://app.qase.io/defect/GOIT/view/61]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-190,IT-192,,,,30/Aug/24 9:56 PM;5f4592bc42959b0039c99bb4;opera_30N2SulTpG.png;https://dianacatalina998.atlassian.net/rest/api/3/attachment/content/10011,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2f5dc830,,,Negative,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000pb:,,,,,,,,,,🔴Critical,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:37 AM
+"Eroare in funcționalitatea butonului ""Next"" paginatorului pentru navigarea între luni",IT-33,10091,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Medium,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 9:44 PM,01/Sep/24 9:09 PM,31/Aug/24 7:02 PM,,,0,"h3. Preconditions
+
+1. Sa ai un cont valid de ""Cashify""
+
+2. Sa fii logat in aplicatia web
+3. Sa fii pe pagina de ""Reports""
+
+h3. Description
+
+Verificarea functionalitatii sagetii ""Next"" a paginatorului pentru a naviga in lunile urmatoare din fereastra ""Raports
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Butonul sub forma de sageata a paginatorului se afla in dreapta sus a corpului paginii in dreapta lunii curente a raportului
+Expected Result: 
+* *Step 2*
+Action: Click pe sageata paginatorului
+
+
+
+*Expected Result:*
+
+# Sageata este situata in dreapta sus a corpului paginii in dreapta lunii curente a raportului
+# Sageata este statica si nu se deplaseaza impreuna cu modificarea lunii din raport
+
+h3. Actual result
+
+Sageata ""Forward"" se deplaseaza la fiecare schimbare de luna pe desktop
+
+Qase.io defect: [Funcționalitatea butonului &quot;Next&quot; paginatorului pentru navigarea între luni|https://app.qase.io/defect/GOIT/view/53]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1c020f0c,,,Positive ,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000nr:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Usability,,,,,,,In Progress,31/Aug/24 11:32 AM
+"Eroare in funcționalitatea butonului ""Previous"" paginatorului pentru navigarea între luni",IT-31,10089,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 9:40 PM,01/Sep/24 9:09 PM,31/Aug/24 7:03 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Verificarea functionalitatii sagetii previous a paginatorului pentru a naviga in lunile anterioare din fereastra ""Reports”
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Butonul sub forma de sageata a paginatorului se afla in dreapta sus a corpului paginii in stanga lunii curente a raportului
+
+* *Step 2*
+Action: Click pe sageata paginatorului
+
+
+*Expectes result:*
+
+# Butonul sub forma de sageata sa fie statica
+# Sa functioneze ca navigator catre luniile anterioare
+
+h3. Actual result
+
+Sageata ""Previous"" se deplaseaza la fiecare schimbare de luna pe telefon/tableta
+
+Qase.io defect: [Funcționalitatea butonului &quot;Previous&quot; paginatorului pentru navigarea între luni|https://app.qase.io/defect/GOIT/view/51]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-214,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1bd43bff,,,Positive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000nb:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:33 AM
+"Eroare in functionalitate textului ""Main Page""",IT-15,10073,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 8:55 PM,01/Sep/24 9:08 PM,31/Aug/24 6:54 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Functionalitatea textului ""Main Page"" de pe pagina ""Reports""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Gaseste textul ""Main page"" situat in dreapta sagetii de reintoarcere la pagina principala in stanga sus a corpului paginii
+* *Step 2*
+Action: Click pe textul ""Main page""
+
+*Expected Result:* 
+
+#  Textul sa fie sub forma de buton
+# La apasarea pe text sa fii redirectionat pe pagina principala a aplicatie web
+
+h3. Actual result
+
+Textul ""Main Page"" nu are functionalitate de buton/redirectionare
+
+Qase.io defect: [Functionalitate textului &quot;Main Page&quot;|https://app.qase.io/defect/GOIT/view/34]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1820346f,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000ji:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:29 AM
+"Eroare in functionalitate textului ""Main Page""",IT-12,10070,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 8:49 PM,01/Sep/24 9:09 PM,01/Sep/24 9:08 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Functionalitatea textului ""Main Page"" de pe pagina ""Reports""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Gaseste textul ""Main page"" situat in dreapta sagetii de reintoarcere la pagina principala in stanga sus a corpului paginii
+
+* *Step 2*
+Action: Click pe textul ""Main page""
+Expected Result: 1. Textul sa fie sub forma de buton
+2. La apasarea pe text sa fii redirectionat pe pagina principala a aplicatie web
+
+h3. Actual result
+
+Textul ""Main Page"" nu are functionalitate de buton/redirectionare
+
+Qase.io defect: [Functionalitate textului &quot;Main Page&quot;|https://app.qase.io/defect/GOIT/view/29]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5efbcdb,,,Positive ,,Google Chrome,,,,,,, 💻Tableta ,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000jr:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:29 AM
+"Textului ""Main Page"" nu este vizibil",IT-11,10069,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,High,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 8:47 PM,01/Sep/24 9:09 PM,01/Sep/24 9:08 PM,,,0,"h3. Preconditions
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/](https://kapusta-qa-ro.p.goit.global/) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+Functionalitatea textului ""Main Page"" de pe pagina ""Reports""
+
+h3. Steps to reproduce
+* *Step 1*
+Action: Gaseste textul ""Main page"" situat in dreapta sagetii de reintoarcere la pagina principala in stanga sus a corpului paginii
+Expected Result: Textul sa fie in dreapta sagetii din stanga sus a corpului paginii
+
+* *Step 2*
+Action: Click pe textul ""Main page""
+Expected Result: 1. Textul sa fie sub forma de buton
+2. La apasarea pe text sa fii redirectionat pe pagina principala a aplicatie web
+
+
+h3. Actual result
+Textul ""Main Page"" nu exista pe telefon
+
+
+
+Qase.io defect: [Functionalitate textului &quot;Main Page&quot;|https://app.qase.io/defect/GOIT/view/27]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@64f36133,,,Positive ,,Google Chrome,,,,,,,📱 Telefon,Android,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000jj:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:29 AM
+"Eroare in integrarea butonului ""Forward"" din browser pentru reintoarcere in fila anterioara",IT-9,10067,Bug,Navigare și paginare,IT,GoIT Project,software,Diana Catalina Poalelungi,712020:cb8049c1-690b-41d9-a4cb-b39d4130ab63,,Low,,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Barbu Alexandru,712020:6d717e6f-b77a-4c1d-9ab8-79b82425f98b,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,30/Aug/24 8:40 PM,01/Sep/24 9:14 PM,01/Sep/24 9:07 PM,,,0,"h3. Preconditions
+
+1. User-ul sa aiba deschis in browser: [https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]([https://kapusta-qa-ro.p.goit.global/|https://kapusta-qa-ro.p.goit.global/]) 
+2. User-ul sa aiba un cont valid de ""Cashify""
+3. User-ul sa fie logat in aplicatia web
+4. User-ul sa fie pe pagina de ""Reports""
+
+h3. Description
+
+Utilizarea butonului pentru a te intoarce in fila de rapoarte dupa ce ai fost redirectinat la ""Main Page""
+
+h3. Steps to reproduce
+
+* *Step 1*
+Action: Click pe sageata ""Main Page"" din stanga sus a corpului paginii
+
+* *Step 2*
+Action: Click pe butonul forward situat in stanga sus a browser-ului utilizat
+Expected Result: La click pe butonul ""Forward"" esti redirectionat pe pagina de ""Reports""
+
+h3. Actual result
+
+Pagina nu este configurata sa poti sa te intorci folosing butonul forward integrat in browser
+
+Qase.io defect: [Utilizarea butonului &quot;Forward&quot; integrat in browser pentru reintoarcere in fila anterioara|https://app.qase.io/defect/GOIT/view/24]
+Found in test run: [Test run 2024/08/30|https://app.qase.io/run/GOIT/dashboard/21]",,Qase for Jira Test Management,5f4592bc42959b0039c99bb4,,,,,,,,,IT-193,IT-194,IT-212,IT-213,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1946431f,,,Positive ,,Google Chrome,,,,,,,🖥️ Desktop ,Windows,,,,,,,,,,🖥️ E2E,,,,,,,,,0|i000j3:,,,,,,,,,,🟠 Major,,Sprint 1 - Cashify,,,0.0,,,,,,,,,,,,,Functional,,,,,,,In Progress,31/Aug/24 11:29 AM
